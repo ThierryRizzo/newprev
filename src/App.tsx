@@ -3,6 +3,7 @@ import * as Icon from './icons'
 import { TriagemForm } from './TriagemForm'
 import type { Triagem } from './TriagemForm'
 import { QuestionarioForm } from './QuestionarioForm'
+import { Exames } from './Exames'
 import { FichaClinica, FICHA_PADRAO } from './FichaClinica'
 
 const TABS = [
@@ -181,6 +182,8 @@ export default function App() {
           <TriagemForm value={triagem} onChange={setTriagem} />
         ) : rota.tab === 'questionario' ? (
           <QuestionarioForm />
+        ) : rota.tab === 'exames' ? (
+          <Exames />
         ) : (
           <div className="panel">
             <div className="panel-placeholder">

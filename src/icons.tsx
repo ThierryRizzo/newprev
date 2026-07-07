@@ -59,3 +59,9 @@ export const FileMedical = ({ size }: P) => (
 export const Search = ({ size }: P) => (
   <svg {...base(size ?? 16)}><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></svg>
 )
+export const Upload = ({ size }: P) => (
+  <svg {...base(size ?? 20)}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="M17 8l-5-5-5 5" /><path d="M12 3v12" /></svg>
+)
+export const FileText = ({ size }: P) => (
+  <svg {...base(size ?? 16)}><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5" /><path d="M9 13h6M9 17h6" /></svg>
+)
